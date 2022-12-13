@@ -15,7 +15,7 @@ const SearchBar = ({ onHandleSearch, onHandleStock }: ISearchBarProps) => {
   };
 
   return (
-    <div className="search-bar">
+    <form className="search-bar">
       <input
         type="text"
         placeholder="Search"
@@ -23,7 +23,7 @@ const SearchBar = ({ onHandleSearch, onHandleStock }: ISearchBarProps) => {
       />
       <br />
       <input type="checkbox" onChange={(e) => onChangeStock(e)} /> Only Stock
-    </div>
+    </form>
   );
 };
 

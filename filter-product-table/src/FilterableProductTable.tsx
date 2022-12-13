@@ -11,10 +11,7 @@ const FilterableProductTable = () => {
   return (
     <>
       <h3>Product Table Filter</h3>
-      <SearchBar
-        onHandleSearch={(value) => setSearchText(value)}
-        onHandleStock={(value) => setIsStock(value)}
-      />
+      <SearchBar onHandleSearch={setSearchText} onHandleStock={setIsStock} />
       <ProductTable
         products={products}
         filterText={searchText}
